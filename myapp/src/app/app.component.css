@@ -1,0 +1,76 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.mycal {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  width: 350px;
+  height: fit-content;
+  background-color: tomato;
+}
+
+.all-btn {
+  display: flex;
+  gap: 30px;
+}
+.all-btn-numbers {
+  display: grid;
+  width: auto;
+  /* flex-wrap: wrap; */
+  margin-top: 20px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.all-btn-signs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.all-btn-numbers button {
+  background-color: white;
+  border: none;
+  height: 48px;
+  width: 48px;
+  font-size: 28px;
+  border-radius: 50px;
+}
+.all-btn-signs button {
+  background-color: aqua;
+  border: none;
+  margin-top: 20px;
+  height: 48px;
+  width: 48px;
+  font-size: 28px;
+  border-radius: 50px;
+}
+input {
+  display: block;
+  width: 100%;
+  font-size: 28px;
+  height: 32px;
+  border: none;
+  padding: 0px;
+}
+.btn-clear-equal button {
+  font-weight: bold;
+  font-size: 28px;
+  width: 64px;
+  margin: 5px;
+  border: none;
+  background-color: white;
+}
+.all-btn-numbers button:hover,
+.all-btn-signs button:hover,
+.btn-clear-equal button:hover {
+  color: rgb(232, 208, 70);
+  background-color: black;
+}
